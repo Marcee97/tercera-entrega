@@ -1,0 +1,16 @@
+.footer{
+    background: rgba(0,0,0,0.990);
+    color: #fff;
+   height: 300px;
+.footer__contenedor{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+     list-style: none;
+     .footer__items{
+        list-style: none;
+        gap: 10px;
+     }
+    }
+    }
