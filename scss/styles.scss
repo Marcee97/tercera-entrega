@@ -20,21 +20,69 @@
         width: 100%;
         gap: 12px;
         color: #fff;
+        @media(max-width:1258px){
+            margin: 9px;
+            padding: 9px;
+        }
+        @media(max-width:1080px){
+            flex-direction: column;
+        }
     }
     .portada{
         object-fit: cover;
         width: 1000px;
+        @media (max-width: 1452px){
+           width: 800px;
+           }
+           @media(max-width:1258px){
+            width: 650px;
+           }
+           @media(max-width:1080px){
+            width:99%;
+            margin-left: -5px;
+        }
     }
     .titulo__texto-portada{
         display: flex;
         position: absolute;
-        left: 402px;
+        left: 15%;
         top:722px;
         background: linear-gradient(to right,#000,#363636);
         font-family: europa,sans-serif;
         padding: 4px;
         font-weight: 700;
         z-index: 10;
+        @media(max-width:1452px){
+            top: 632px;
+            left: 9%;
+        }
+        @media(max-width:1258px){
+            top: 559px;
+            left: 7%;
+        }
+        @media(max-width:1080px){
+            top: 743px;
+            left: 17%;
+        }
+        @media(max-width:930px){
+            top: 655px;
+        }
+        @media(max-width:800px){
+            top: 644px;
+        }
+        @media(max-width:714px){
+            top: 584px;
+        }
+        @media(max-width:670px){
+            top: 543px;
+        }
+        @media(max-width:544px){
+            top: 435px;
+        }
+        @media(max-width:444px){
+            top: 455px;
+            left: 40px;
+        }
     }
     .info__ultimo-evento{
         display: flex;
@@ -42,26 +90,88 @@
         flex-direction: column;
         gap: 10px;
         top: 740px;
-        left: 385px;
+        left: 14%;
         justify-content: start;
         height: 140px;
-        width: 39%;
+        width: 49%;
         color: #000;
         background-color: #fff;
         font-weight: bold;
-        padding: 9px;
+        padding: 19px;
         font-family: europa,sans-serif;
+        @media(max-width:1452px){
+            top: 650px;
+            left:7%;
+            width: 52%;
+        }
+        @media(max-width:1258px){
+            top: 575px;
+            left: 5.3%;
+            height:120px;
+            width: 50%;
+        }
+        @media(max-width:1080px){
+            top: 759px;
+            left:15% ;
+            width: 70%;
+        }
+        @media(max-width:930px){
+            top: 661px;
+        }
+        @media(max-width:714px){
+            top: 601px;
+            font-size: 13px;
+            
+        }
+        @media(max-width:670px){
+            top: 560px;
+            font-size: 13px;
+        }
+       @media(max-width:544px){
+            top: 500px;
+            height: 145px;
+        }
+        @media(max-width:544px){
+            top:450px ;
+        }
+        @media(max-width:444px){
+            height: 120px;
+            width: 90%;
+            left: 21px;
+            top: 470px;
+        }
+        
     }
     .texto__portada{
+        display: flex;
+        flex-wrap: wrap;
         font-family: europa,sans-serif;
-        font-size: 19px;
+        font-size: 1.1rem;
         color: #7e7d7d;
         line-height: 1.5;
+        @media(max-width:800px){
+            font-size: 16px;
+        }
+        @media(max-width:444px){
+            font-size: 14px;
+            flex-wrap: nowrap;
+        }
+       
     }
     .contenedor__proximos-eventos{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media(max-width:1080px){
+            margin-top: 75px;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 5px;
+        }
+        @media(max-width:800px){
+            flex-direction: column;
+            margin-top: 145px;
+        }
     }
     .lugar{
         display: flex;
@@ -79,7 +189,7 @@
         gap: 8px;
         list-style: none;
         font-size: 18px;
-    a{
+       a{
         text-decoration: none;
         color: #fff;
         }
@@ -93,6 +203,11 @@
         font-size: 17px;
         font-family: europa,sans-serif;
     }
+    .tamaño__1080{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
     .proximos-eventos__info li:nth-child(2){
         color: #7e7d7d;
         font-size: 12px;
@@ -105,9 +220,18 @@
         font-weight: bolder;
         letter-spacing: 0.8px;
     }
+    .contenedor__noticias{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
     .noticias__info{
         display: flex;
         width: 430px;
+        @media(max-width: 1080px){
+            
+            flex-direction: row;
+        }
     img{
         object-fit: cover;
         width: 120px;
@@ -118,6 +242,12 @@
         padding: 15px;
         background-color: #fff;
         color: #000;
+        @media(max-width:1080px){
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+        }
+        
     }
     .noticias__titulo{
         font-weight: bolder;
@@ -156,10 +286,8 @@
     background-attachment:fixed;
     background-position: center;
 }
-
 .main__grilla{
     background:rgba(3, 3, 3, 0.946);
-    
     color: #fff;
     width: 90%;
     margin: auto;
@@ -168,7 +296,6 @@
         justify-content: end;
         font-weight: 700;
         gap: 7px;
-        
         a{
             text-decoration: none;
             color: #afafaf;
@@ -179,7 +306,6 @@
         
     }
     .section__grilla{
-        
         .contenedor__grilla{
             display: flex;
             align-items: center;
@@ -187,14 +313,13 @@
             padding: 12px;
             font-size: 22px;
             text-align: center;
-            
+            width: 100%;
             img{
-                width: 700px;
+                width: 100%;
             }
             h2{
                 margin-bottom: 55px;
             }
-                
         }
         .grilla__fotos{
             display: flex;
@@ -203,13 +328,15 @@
             text-align: center;
             font-size: 22px;
             img{
-                width: 350px;
-                height: 350px;
+                width: 100%;
                 object-fit: cover;
                 margin: 5px;
             }
             h2{
                 margin-bottom: 25px;
+            }
+            .parrafo__inferior{
+                padding: 12px;
             }
         }
     }
@@ -220,7 +347,6 @@
             flex-direction: column;
             align-items: center;
             height: 400px;
-            
         }
     }
     .seccion__entradas{
@@ -262,14 +388,28 @@
         background: rgba(36, 35, 35, 0.716);
         h2{
             position: absolute;
-            top: 1510px;
+            top: 1109px;
             font-size: 4.5rem;
             text-shadow: 3px 4px 3px rgba(0, 0, 0, 1);
+            @media(max-width:1164px){
+                left:30px;
+                font-size: 4.3rem;
+                top: 124%;
+                text-align: center;
+            }
         }
         img{
-            width: 571px;
+            width: 100%;
             height: 500px;
             object-fit: cover;
+            @media(max-width:1080px){
+                height:430px ;
+            }
+            @media(max-width:990px){
+                height:290px ;
+                margin: 5px;
+               
+            }
         }
     }
     .logo__grilla{
@@ -359,6 +499,7 @@
     padding: 9px;
     background-color: #e9e9e9;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     .tienda__row{
         display: flex;
@@ -415,9 +556,16 @@
             align-items: center;
             height: 550px;
             background:rgba(3, 3, 3, 0.600);
+            border-radius: 9px;
             font-size: 20px;
             color: #fff;
             width: 50%;
+            @media(max-width:732px){
+                width: 80%;
+            }
+            .titulos__tickets{
+                width: 100%;
+            }
             h2{
                 color: orange;
                 font-size: 40px;
@@ -433,7 +581,7 @@
                 padding: 10px;
             }
             hr{
-                width: 800px;
+                width: 90%;
                 
             }
             .cuadro__tickets{
@@ -442,14 +590,20 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 90%;
-                
                 background:rgba(3, 3, 3, 0.600);
                 padding: 3px;
                 margin: 5px;
+                 @media(max-width:732px){
+                    padding: 0;
+                 }
                 h3{
                     background: #2c2c2c;
                     padding: 15px;
                     width: 100px;
+                    @media(max-width:732px){
+                      width: 80px;
+                      font-size: 16px;
+                    }
                 }
                 button{
                     background: transparent;
@@ -458,6 +612,10 @@
                     width: 100px;
                     height: 60px;
                     font-size: 16px;
+                    @media(max-width:732px){
+                        height: 50px;
+                        width: 80px;
+                    }
                     &:hover{
                         background-color: #202020;
                     }
@@ -465,6 +623,9 @@
                 p{
                     font-weight: 600;
                     font-size: 27px;
+                    @media(max-width:732px){
+                        font-size: 20px;
+                    }
                 }
             }
         }

@@ -15,12 +15,23 @@
         margin: 15px;
         font-size: 1.4rem;
         font-weight: bolder;
+        @media (max-width: 1426px){
+            justify-content: center;
+            width: 100%;
+            margin-left: 140px;
+        }
+        @media (max-width: 662px){
+            margin: auto;
+        }
     }
     .header__ul a{
         text-decoration: none;
         color: #fff;
         &:hover{
             color: $color-secondary;
+        }
+        @media (max-width: 662px){
+            margin: auto;
         }
     }
     .header__redes{
