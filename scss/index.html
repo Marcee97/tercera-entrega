@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lollapalooza argentina festival de musica.comprar entradas para los distintos dias.Artistas de todo el mundo">
+    <meta name="keywords" content="Lollapalooza,festival,musica,evento,fest">
     <title>Tienda sass</title>
     <script src="https://kit.fontawesome.com/21948053b7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
@@ -13,10 +15,10 @@
         <nav class="header__nav">
             <ul class="header__ul">
                 <li><a href="#">Home</a></li>
-                <li><a href="/scss/_views/tickets.html">Tickets</a></li>
-                <li><a href="/scss/_views/tienda.html">Tienda</a></li>
-                <li><a href="/scss/_views/grilla.html">Grilla</a></li>
-                <li><a href="/scss/_views/galeria.html">Galeria</a></li>
+                <li><a href="/scss/_views/_tickets/tickets.html">Tickets</a></li>
+                <li><a href="/scss/_views/_tienda/tienda.html">Tienda</a></li>
+                <li><a href="/scss/_views/_grilla/grilla.html">Grilla</a></li>
+                <li><a href="/scss/_views/_galeria/galeria.html">Galeria</a></li>
             </ul>
             <ul class="header__redes">
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
@@ -42,7 +44,6 @@
                 <p class="texto__portada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magn stim um alias, voluptate, illum, corrupti reprehenderit.</p>
             </div>
         </div>
-        
         <div class="contenedor__proximos-eventos">
             <div class="tamaño__1080">
                 <h2>Proximos Eventos</h2>
@@ -52,7 +53,7 @@
                         <li><h3>Argentina</h3></li>
                         <li><p><i class="fa-solid fa-calendar-days"></i>  July 21-23</p></li>
                         <li><p><i class="fa-solid fa-location-dot"></i>  Buenos Aires</p></li>
-                        <li><a href="#">Tickets ></a></li>
+                        <li><a href="/scss/_views/_tickets/tickets.html">Tickets ></a></li>
                     </ul>
                 </div>
                 <hr class="hr">
@@ -62,31 +63,29 @@
                         <li><h3>Brasil</h3></li>
                         <li><p><i class="fa-solid fa-calendar-days"></i>  December 21-23</p></li>
                         <li><p><i class="fa-solid fa-location-dot"></i> Rio De Janeiro</p></li>
-                        <li><a href="#">Tickets ></a></li>
+                        <li><a href="/scss/_views/_tickets/tickets.html">Tickets ></a></li>
                     </ul>
                 </div>
             </div>
-                
-                
                 <div class="contenedor__noticias">
                     <h2>Noticias</h2>
                 <div class="noticias__info">
                     <img src="../img/red hot chili peppers.webp" alt="" srcset="">
                     <div class="texto__info">
-                        <p><span class="noticias__titulo"><h4>Red Hot Chili Peppers</h4></span><span class="noticias__texto">Escucha su nuevo disco,ya tenemos fecha y nose que mas poner.</span></p>
+                        <p><span class="noticias__titulo"><h4>Red Hot Chili Peppers</h4></span><span class="noticias__texto">Escucha su nuevo disco,ya tenemos fecha Lorem ipsum dolo consectet.</span></p>
                     </div>
                 </div>
                 <div class="noticias__info">
                 <img src="../img/aurora.avif" alt="" srcset="">
                 <div class="texto__info">
-                    <p><span class="noticias__titulo"><h4>Aurora</h4></span><span class="noticias__texto">Escucha su nuevo disco,ya tenemos fecha y nose que mas poner.</span></p>
+                    <p><span class="noticias__titulo"><h4>Aurora</h4></span><span class="noticias__texto">Escucha su nuevo disco,ya tenemos fecha Lorem ipsum doloconsectet.</span></p>
                 </div>
             </div>
         
             <div class="noticias__info">
                 <img src="../img/bizarrap.jpg" alt="" srcset="">
             <div class="texto__info">
-                <p><span class="noticias__titulo"><h4>Bizarrap</h4></span><span class="noticias__texto">Escucha su nuevo disco,ya tenemos fecha y nose que mas poner.</span></p>
+                <p><span class="noticias__titulo"><h4>Bizarrap</h4></span><span class="noticias__texto">Escucha su nuevo disco,ya tenemos fecha Lorem ipsum dolo consectet.</span></p>
             </div>
             </div>
         </div>
@@ -94,7 +93,6 @@
         </section>
         <section class="segunda__seccion">
             <div class="contenedor__spotify">
-                
                 <h2>Playlist oficial</h2>
                 <a href="#">Escuchala aca</a>
             </div>
@@ -103,31 +101,32 @@
     <footer class="footer">
         <div class="footer__contenedor">
             <div>
-            <h3>Tienda</h3>
-            <ul class="footer__items">
-                <li>Remeras</li>
-                <li>Buzos</li>
-                <li>Accesorios</li>
-            </ul>
-        </div>
+                <h2>Tienda</h2>
+                <ul class="footer__items">
+                    <li><a href="#">Remeras</a></li>
+                    <li><a href="#">Buzos</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                </ul>
+            </div>
             <div>
-                <h3>Seguinos</h3>
-            <ul class="footer__items">
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            </ul>
+                <h2>Seguinos:</h2>
+                <ul class="footer__items footer__items--display">
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Ayuda</h2>
+                <ul class="footer__items">
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Terminos y Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Ayuda</h3>
-        <ul class="footer__items">
-            <li>Remeras</li>
-            <li>Buzos</li>
-            <li>Accesorios</li>
-        </ul>
-    </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
 
