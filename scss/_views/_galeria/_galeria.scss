@@ -1,9 +1,18 @@
+
+.body__galeria{
+.header__galeria{
+    background:rgba(0, 0, 0, 0.900);
+    .header__nav--galeria{
+        background:rgba(0, 0, 0, 0.100);
+    }
+}
+}
+
 .contenedor__imagenes{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4,auto);
     gap: 5px;
-    
     .gallery__items{
         object-fit: cover;
         img{

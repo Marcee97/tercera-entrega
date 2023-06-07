@@ -1,12 +1,15 @@
-.header__logo--fondo{
+.body__tienda{
     background-image: url(https://cdn.shopify.com/s/files/1/0254/4353/2848/files/DSC_1222-Edit_1944x.jpg?v=1676909935);
+    background-attachment:fixed;
 }
-
-    
-
-.main__tienda{
-    h2{
+    .main__tienda{
+       
+    .cabezera__tienda{
         text-align: center;
+        img{
+            width: 100px;
+            background:rgba(0, 0, 0, 0.486);
+        }
     }
     .tienda{
     padding: 9px;

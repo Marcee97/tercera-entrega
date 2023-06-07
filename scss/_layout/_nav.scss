@@ -1,8 +1,8 @@
 .header{
-    background:rgba(3, 3, 3, 0.996);
+    background:rgba(3, 3, 3, 0.989);
     .header__nav{
         display: flex;
-        background:rgba(0, 0, 0, 0.999);
+        background:rgba(0, 0, 0, 0.900);
         @media(max-width:548px){
             flex-wrap: wrap;
             justify-content: center;

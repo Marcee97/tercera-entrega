@@ -4,23 +4,22 @@
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
-   
-    
-}
-.header__tickets{
-    background:rgba(3, 3, 3, 0.600);
-    
-}
+    .header__tickets{
+        background:rgba(3, 3, 3, 0.589);
+        .header__nav--tickets{
+            background:rgba(0, 0, 0, 0.600);
+        }
+
+    }
+   }
+  
 
 .main__tickets{
     background:rgba(3, 3, 3, 0.600);
     width: 100%;
-   
-    .section__tickets{
+   .section__tickets{
         display: flex;
         justify-content: center;
-        
-        
         .contenedor__tickets{
             display: flex;
             flex-direction: column;
