@@ -14,9 +14,7 @@
             height: 1000px;
             font-size: 3em;
             h2{
-                font-size: 2em;
                 text-shadow: -3px -3px 5px #0a0a0a;
-                
             }
             img{
                 width: 100px;
@@ -37,11 +35,15 @@
             text-align: center;
             padding: 20px;
             font-family: 'Montserrat Alternates', sans-serif;
+            text-shadow: -3px -3px 5px #0a0a0a;
             color: #ffff;
             width: 100%;
-           
         }
-
+        .cabezera__tienda{
+            h2{
+                background: rgba(255, 255, 255, 0.055);
+            }
+        }
     .tienda{
     padding: 9px;
     background:rgba(255, 255, 255, 0.939);
