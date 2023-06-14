@@ -1,9 +1,13 @@
 .header{
     background:rgba(3, 3, 3, 0.989);
+    @media(max-width:400px){
+        height: 190px;
+        
+    }
     .header__nav{
         display: flex;
         background:rgba(0, 0, 0, 0.900);
-        @media(max-width:548px){
+        @media(max-width:400px){
             flex-wrap: wrap;
             justify-content: center;
             padding: 7px;
@@ -27,6 +31,9 @@
         }
         @media (max-width: 662px){
             margin: auto;
+        }
+        @media(max-width:400px){
+            font-size: 1.2rem;
         }
     }
     .header__ul a{
@@ -62,10 +69,25 @@
         color: #fff;
         width: 100%;
         height: 210px;
-        
+        @media(max-width:400px){
+           height: 80px;
+           
+        }
+    
+        h2{
+            @media(max-width:400px){
+                font-size: 1rem;
+            }
+        }
         img{
         width: 112px;
         height: 112px;
+        @media(max-width:400px) {
+            width: 80px;
+            height: 80px;
+           
         }
+        }
+       
     }
 }
