@@ -1,8 +1,14 @@
 .body__tienda{
-    background-image: url(https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/03/26154215/LollaMerch-31.jpg);
+    background-image: url(/img/LollaMerch-31.webp);
     background-attachment:fixed;
     background-size: cover;
-   }
+    .header__tienda{
+        @media(max-width:400px){
+            height: 0px;
+        }
+    }
+}
+    
     .main__tienda{
         background-color: rgba(0, 0, 0, 0.306);
         .main__portada--tienda{
@@ -12,7 +18,18 @@
             justify-content: center;
             background-color: rgba(0, 0, 0, 0.006);
             height: 1000px;
-            font-size: 3em;
+            font-size: 2.5em;
+            @media(max-width:830px){
+                font-size: 1.9em;
+            }
+            @media(max-width:630px){
+                font-size: 1.2em;
+            }
+            @media(max-width:414px){
+                font-size: 1em;
+                margin-left: -11px;
+                
+            }
             h2{
                 text-shadow: -3px -3px 5px #0a0a0a;
             }
@@ -59,11 +76,13 @@
             display: flex;
             width: 100%;
             justify-content: space-around;
+            margin: 9px;
             button{
                 border-radius: 5px;
                 padding: 5px;
                 border: none;
                 border: 1px solid #000000;
+               
             }
         }
         p:nth-child(3){

@@ -225,7 +225,7 @@
 }
 
 .body__tickets {
-  background-image: url(../img/fondotickets.jpg);
+  background-image: url(/img/fondotickets-1.webp);
   background-position: center top;
   background-attachment: fixed;
   background-size: cover;
@@ -378,9 +378,14 @@
 }
 
 .body__tienda {
-  background-image: url(https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/03/26154215/LollaMerch-31.jpg);
+  background-image: url(/img/LollaMerch-31.webp);
   background-attachment: fixed;
   background-size: cover;
+}
+@media (max-width: 400px) {
+  .body__tienda .header__tienda {
+    height: 0px;
+  }
 }
 
 .main__tienda {
@@ -393,7 +398,23 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.006);
   height: 1000px;
-  font-size: 3em;
+  font-size: 2.5em;
+}
+@media (max-width: 830px) {
+  .main__tienda .main__portada--tienda {
+    font-size: 1.9em;
+  }
+}
+@media (max-width: 630px) {
+  .main__tienda .main__portada--tienda {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 414px) {
+  .main__tienda .main__portada--tienda {
+    font-size: 1em;
+    margin-left: -11px;
+  }
 }
 .main__tienda .main__portada--tienda h2 {
   text-shadow: -3px -3px 5px #0a0a0a;
@@ -440,6 +461,7 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  margin: 9px;
 }
 .main__tienda .tienda .tienda__row .tienda__botones button {
   border-radius: 5px;
@@ -475,6 +497,12 @@
 .header .header__nav {
   display: flex;
   background: rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 545px) {
+  .header .header__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (max-width: 400px) {
   .header .header__nav {
