@@ -75,19 +75,13 @@
                     }
                 }
                 button{
-                    background: transparent;
-                    border: 0.01px solid #fff;
-                    color: #fff;
-                    width: 100px;
-                    height: 60px;
-                    font-size: 16px;
+                   @include botones-tickets();
+
                     @media(max-width:732px){
                         height: 50px;
                         width: 80px;
                     }
-                    &:hover{
-                        background-color: #202020;
-                    }
+                   
                 }
                 p{
                     font-weight: 600;

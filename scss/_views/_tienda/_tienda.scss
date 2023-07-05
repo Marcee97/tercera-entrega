@@ -33,6 +33,9 @@
             h2{
                 text-shadow: -3px -3px 5px #0a0a0a;
             }
+            h1{
+                text-shadow: -3px -3px 5px #0a0a0a;
+            }
             img{
                 width: 100px;
             }
@@ -48,6 +51,15 @@
             }
         }
        h2{
+            font-size: 3em;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Montserrat Alternates', sans-serif;
+            text-shadow: -3px -3px 5px #0a0a0a;
+            color: #ffff;
+            width: 100%;
+        }
+        h1{
             font-size: 3em;
             text-align: center;
             padding: 20px;
